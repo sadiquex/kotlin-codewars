@@ -61,7 +61,7 @@ You can assume, for the purpose of this kata, that the supplied array will not b
 //            return "Overweight"
 //        } else return "Obese"
 
-//        solution 2
+//        solution 2.
         return when {
             calculatedValue <= 18.5 -> "Underweight"
             calculatedValue <= 25.0 -> "Normal"
