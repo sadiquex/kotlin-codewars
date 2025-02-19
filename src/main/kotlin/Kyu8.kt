@@ -105,6 +105,15 @@ fun evenOrOdd(number: Int): String {
     }
 }
 
+/* Q6. Write a function that removes all vowels from a given string and returns the new string. */
+
+fun removeVowels(word: String): String {
+    val vowels = arrayOf('a', 'e', 'i', 'o', 'u')
+//    1. Convert string to list of characters
+    val convertedWord = word.split("")
+//    2. Remove all vowels from the list.
+    return word.filter { it !in vowels } // return only non vowels
+}
 
 fun main() {
 
@@ -113,8 +122,9 @@ fun main() {
 //    println(bmi(100.0, 1.80)) // Q3
 //    println(squareSum(arrayOf(1, 2, 2)))
 //    println(mapFunction())
-    println(evenOrOdd(4))
+//    println(evenOrOdd(4))
 
+    println(removeVowels("Saddik"))
 }
 
 
